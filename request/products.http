@@ -1,0 +1,33 @@
+
+@api = http://localhost:3000/products
+
+GET {{api}}
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "Name": "Monitor112", 
+    "Description": "Samsung112", 
+    "Quantity": 30112
+}
+
+###
+GET {{api}}/3
+
+###
+DELETE {{api}}/7
+
+###
+GET {{api}}/count
+
+###
+PUT {{api}}/3
+Content-Type: application/json
+
+{
+    "Name": "Monitor112", 
+    "Description": "Samsung112", 
+    "Quantity": 2
+}
